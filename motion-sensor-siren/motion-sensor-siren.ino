@@ -12,7 +12,7 @@ void setup() {
 }
 
 void loop() {
-  //if it detects a motion this will blind the ledpin and play the siren tone for 5secs
+  //if it detects a motion this will blink the ledpin and play the siren tone for 5secs
   if (digitalRead(motionSensor) == HIGH) {
     Serial.println("Motion detected!!!");
     blinkLED(250);
